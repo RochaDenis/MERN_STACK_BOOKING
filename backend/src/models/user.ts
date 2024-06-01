@@ -25,4 +25,4 @@ userSchema.pre('save', async function (next) {
 
 const User = mongoose.model<UserType>('User', userSchema); // Create a model from the schema
 
-export default User;
+export default User; // Export the model
