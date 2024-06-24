@@ -44,7 +44,7 @@ router.post(
         secure: process.env.NODE_ENV === "production",
         maxAge: 86400000, // 1 day
       }); // Set the cookie in the response
-      return res.status(201).json({ message: "User created successfully" }); // Send a success response
+      return res.sendStatus(200).send({ message: "User registered" });
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: "Internal Server Error" });

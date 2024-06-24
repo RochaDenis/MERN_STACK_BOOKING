@@ -28,7 +28,7 @@ const App = () => {
           }
         />
         <Route
-          path="/Register"
+          path="/register"
           element={
             <Layout>
               <Register />

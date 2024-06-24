@@ -33,7 +33,7 @@ app.use("/api/auth", authRouter); // Utilizando o roteador de autenticação
 // Utilizando o roteador de usuários
 app.use("/api/users", userRoutes);
 
-const PORT = process.env.PORT || 7001; // Definindo a porta do servidor
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+
+app.listen(7001, () => {
+  console.log("Server is running on port 7001");
 }); // Inicializando o servidor na porta 7000
